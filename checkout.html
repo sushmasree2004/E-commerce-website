@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>CHECKOUT</title>
+    <style>
+        .navbar-nav {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+        }
+  
+        .navbar-nav .nav-item {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+        }
+  
+        .navbar-nav form {
+          flex: 1;
+        }
+  
+        .navbar-nav a.nav-link {
+          text-align: center;
+        }
+  
+        .form-control {
+          width: 100%;
+        }
+        .footer_section {
+          background: rgb(59, 55, 80);
+          color: white;
+        }
+  
+        .footer_section a {
+          color: white;
+          text-decoration: none;
+        }
+  
+        .footer_section h3 {
+          color: white;
+        }
+  
+        .footer_section ul {
+          list-style: none;
+          padding: 0;
+        }
+  
+        .footer_section ul li {
+          margin-bottom: 10px;
+        }
+  
+        .footer_section ul li a:hover {
+          text-decoration: underline;
+        }
+  
+        .border-top {
+          border-top: 1px solid white !important;
+        }
+  
+        .backtop {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+        }
+  
+        .backtop a {
+          display: inline-block;
+          padding: 10px;
+          border-radius: 50%;
+          background-color: #ffffff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
+        }
+  
+        .backtop a:hover {
+          background-color: #f8f9fa;
+        }
+        .container{
+            /* background-color: rgb(82, 82, 243); */
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+        }
+        .card{
+            background-color: aliceblue;
+        }
+        
+      </style>
+  </head>
+  <body>
+
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="navbar-brand" href="cit.html">
+                      <img src="https://www.logodesignteam.com/images/portfolio-images/ecommerce-websites-logo-design/ecommerce-websites-logo-design20.jpg" alt="Bootstrap" width="50" height="45">
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="cit.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="product.html">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">Category</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                  </li>
+                  <div class="search mr-3"> 
+                    <a href="search.html" class="btn btn-sm btn-outline-primary"> 
+                      Search 
+                    </a> 
+                  </div> 
+                  <a href="cart.html" class="nav-link">
+                    <i class="fas fa-shopping-cart fa-2x"></i>
+                    <span class="badge bg-primary rounded-pill">10</span>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+
+       <!-- ==============Checkout starts here============== --> 
+    <section class="Checkout py-5 my-5" id="Checkout"> 
+        <div class="container "> 
+            <div class="section_title text-center mb-5"> 
+                <h1 class="text-capitalize">Checkout</h1> 
+            </div> 
+            <div class="row"> 
+                <!--Grid column--> 
+                <div class="col-lg-8"> 
+                    <!-- Card --> 
+                    <div class="card bg_checkout_1 pb-5 "> 
+                        <div class="card-body"> 
+                            <h5 class="mb-5">Billing details</h5> 
+                            <!-- Grid row --> 
+                            <div class="row"> 
+                                <!-- Grid column --> 
+                                <div class="col-lg-6"> 
+                                    <!-- First name --> 
+                                    <div class="form-group mb-0 mb-lg-4"> 
+                                        <label for="firstName">First name</label> 
+                                        <input type="text" id="firstName" class="form-control mb-0 mb-lg-2"> 
+                                    </div> 
+                                </div> 
+                                <!-- Grid column --> 
+ 
+                                <!-- Grid column --> 
+                                <div class="col-lg-6"> 
+                                    <!-- Last name --> 
+                                    <div class="form-group md-outline"> 
+                                        <label for="lastName">Last name</label> 
+                                        <input type="text" id="lastName" class="form-control"> 
+                                    </div>
+                                </div> 
+                                <!-- Grid column --> 
+                            </div> 
+                            <!-- Grid row --> 
+ 
+                            <!-- Phone --> 
+                            <div class="form-group"> 
+                                <label for="form18">Phone</label> 
+                                <input type="number" id="form18" class="form-control"> 
+                            </div> 
+ 
+                            <!-- Email address --> 
+                            <div class="form-group"> 
+                                <label for="form19">Email address</label> 
+                                <input type="email" id="form19" class="form-control"> 
+                            </div> 
+ 
+                            <!-- Country --> 
+                            <div class="d-flex flex-wrap"> 
+                                <div class="w-100"> 
+                                    <label>Country</label> 
+                                    <select class="custom-select form-group"> 
+                                        <option value="" selected>Choose your option</option> 
+                                        <option value="1">Option 1</option> 
+                                        <option value="2">Option 2</option> 
+                                        <option value="3">Option 3</option> 
+                                    </select> 
+                                </div> 
+                            </div> 
+ 
+                            <!-- Address Part 1 --> 
+                            <div class="form-group"> 
+                                <label for="form14">Address Line 1</label>
+                                <input type="text" id="form14" placeholder="House number and 
+                                street name" 
+                                                                    class="form-control"> 
+                                                            </div> 
+                                 
+                                                            <!-- Address Part 2 --> 
+                                                            <div class="form-group"> 
+                                                                <label for="form15">Address Line 2</label> 
+                                                                <input type="text" id="form15" placeholder="Apartment, suite, unit 
+                                etc. (optional)" 
+                                                                    class="form-control"> 
+                                                            </div> 
+                                 
+                                                            <!-- Postcode / ZIP --> 
+                                                            <div class="form-group"> 
+                                                                <label for="form16">Postcode / ZIP</label> 
+                                                                <input type="text" id="form16" class="form-control"> 
+                                                            </div> 
+                                 
+                                                            <!-- Town / City --> 
+                                                            <div class="form-group"> 
+                                                                <label for="form17">Town / City</label> 
+                                                                <input type="text" id="form17" class="form-control"> 
+                                                            </div> 
+                                 
+                                                            <!-- Additional information --> 
+                                                            <div class="form-group"> 
+                                                                <label for="form76">Additional information</label> 
+                                                                <textarea id="form76" class="md-textarea form-control" 
+                                rows="4"></textarea> 
+                                                            </div> 
+                                                            <!-- <button class="btn btn-success"><i class="fa fa-check"></i> 
+                                Purchase</button> -->
+                                <div class="text-center"> 
+                                    <a href="order_confirmation.html" class="btn btn-primary"> 
+                                        <i class="fa fa-check mr-2"></i>Purchase 
+                                    </a> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <!-- Card --> 
+                    </div> 
+                    <!--Grid column--> 
+     
+                    <!--Grid column--> 
+                    <div class="col-lg-4 bg_checkout_1 h-25 rounded border border-dark"> 
+                        <!-- Card --> 
+                        <div class="mb-3  "> 
+                            <div class="pt-4 "> 
+                                <h5 class="mb-3">Order summary</h5> 
+                                <ul class="list-group list-group-flush"> 
+                                    <li 
+                                        class="list-group-item d-flex justify-content-between lign-items-center border-0 px-0 pb-2"> 
+                                        <span>Product name 1</span> 
+                                        <span>x2</span> 
+                                        <span>₹25.98</span> 
+                                    </li> 
+                                    <li 
+                                        class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2"> 
+                                        <span>Product name 2</span> 
+                                        <span>x2</span> 
+                                        <span>₹25.98</span> 
+                                    </li> 
+                                    <li   class="list-group-item d-flex justify-content-between 
+                                    align-items-center border-top px-0 mb-3"> 
+                                                                        <div> 
+                                                                            <strong>Total amount</strong> 
+                                                                            <strong> 
+                                                                                <p class="mb-0">(including VAT)</p> 
+                                                                            </strong> 
+                                                                        </div> 
+                                                                        <span><strong>₹53.98</strong></span> 
+                                                                    </li> 
+                                                                </ul> 
+                                                            </div> 
+                                                        </div> 
+                                                        <!-- Card --> 
+                                                    </div> 
+                                                    <!--Grid column--> 
+                                                </div> 
+                                            </div> 
+                                        </section> 
+                                     
+                                        <!-- ==============Checkout ends here============== -->
+    
+
+
+      <section class="footer_section pt-5 pb-2" id="footer_section ">
+        <footer >
+          <div class="container-fluid text">
+            <div class="row">
+      
+              <div class="col-md-3 col-6 pl-5 pl-sm-15">
+                <div class="footer_title">
+                  <a href="cit.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2CEpSoPpFdRBbeMfWY815dFlg5neQIYElzaviFYuhGRLvBB6wdvaIoLtt1CuDN3GeCA&usqp=CAU" width="150px" class="img img-fluid" alt="logo"></a>
+                </div>
+                <div>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio quis asperiores cumque accusamus eaque dolor enim. 
+                </div>
+              </div>
+      
+              <div class="col-md-3 col-6">
+                <div class="footer_title pt-3 mb-3">
+                  <h3>Quick Links</h3>
+                </div>
+                <div class="footer_links">
+                  <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Offers and Discounts</a></li>
+                    <li><a href="#">Get Coupon</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="col-md-3 col-6">
+                <div class="footer_title pt-3 mb-3">
+                  <h3>New Product</h3>
+                </div>
+                <div class="footer_links">
+                  <ul>
+                    <li><a href="#">Woman Cloth</a></li>
+                    <li><a href="#">Fashion Accessories</a></li>
+                    <li><a href="#">Man Accessories</a></li>
+                    <li><a href="#">Toys</a></li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="col-md-3 col-6">
+                <div class="footer_title pt-3 mb-3">
+                  <h3>Support</h3>
+                </div>
+                <div class="footer_links">
+                  <ul>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy and Policy</a></li>
+                    <li><a href="#">Report a Payment Issue</a></li>
+                  </ul>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+          <div class="border-top">
+            <h6 class="text-center mt-3">Copyright @2020 All rights Reserved</h6>
+          </div>
+        </footer>
+      </section>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

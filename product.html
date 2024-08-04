@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Products</title>
+    <style>
+      .navbar-nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .navbar-nav .nav-item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .navbar-nav form {
+        flex: 1;
+      }
+
+      .navbar-nav a.nav-link {
+        text-align: center;
+      }
+
+      .form-control {
+        width: 100%;
+      }
+      .footer_section {
+        background: rgb(59, 55, 80);
+        color: white;
+      }
+
+      .footer_section a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .footer_section h3 {
+        color: white;
+      }
+
+      .footer_section ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer_section ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer_section ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .border-top {
+        border-top: 1px solid white !important;
+      }
+
+      .backtop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .backtop a {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .backtop a:hover {
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="header_menu" id="header_menu">
+      <div class="container-fluid px-0 shadow">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="navbar-brand" href="cit.html">
+                    <img src="https://www.logodesignteam.com/images/portfolio-images/ecommerce-websites-logo-design/ecommerce-websites-logo-design20.jpg" alt="Bootstrap" width="50" height="45">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="cit.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                <div class="search mr-3"> 
+                  <a href="search.html" class="btn btn-sm btn-outline-primary"> 
+                    Search 
+                  </a> 
+                </div> 
+                <a href="cart.html" class="nav-link">
+                  <i class="fas fa-shopping-cart fa-2x"></i>
+                  <span class="badge bg-primary rounded-pill">10</span>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- navbar ends -->
+
+    <section class="products py-5 my-5" id="products">
+      <div class="container">
+        <div class="section_title text-center mb-5">
+          <h1 class="text-capitalize">Products</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-3 border-right mb-small-5">
+            <h4 class="mb-5 border-bottom">Filters</h4>
+            <div class="mb-5">
+              <label><b>Category</b></label>
+              <ul class="list-group">
+                <li class="list-group-item">Category 1</li>
+                <li class="list-group-item">Category 2</li>
+                <li class="list-group-item">Category 3</li>
+                <li class="list-group-item">Category 4</li>
+                <li class="list-group-item">Category 5</li>
+              </ul>
+            </div>
+            <div>
+              <form>
+                <div class="form-group">
+                  <label><b>Price</b></label>
+                  <input type="range" min="100" max="1000" step="100" class="form-control-range">
+                </div>
+              </form>
+              <div class="d-flex justify-content-between">
+                <label>100</label>
+                <label>1000</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="row mb-5">
+              <div class="col-md-4 col-12">
+                <div class="single_product shadow text-center p-1">
+                  <div class="new_product position-absolute top-0 start-0">
+                    <span class="badge py-2 px-3 rounded-pill bg-danger text-light">New</span>
+                  </div>
+                  <div class="product_img">
+                    <a href="product_details.html"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRMy6GfqR1fvom7jl3GEmbpdMp9GILK3hjKEtKufXzoaodTNfzty4dHJY5MsLGTwl_AOnjuGvIS662hFa_h7ET7LTwCXT-4X4KP1_8wM6NZ&usqp=CAE" class="img img-fluid" alt=""></a>
+                  </div>
+                  <div class="product-caption my-3">
+                    <div class="product-ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <h5><a href="product_details.html">BLUE BLAZER</a></h5>
+                    <div class="price">
+                      <b><span class="mr-1"></span><span>400</span></b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5">
+                  <div class="product_img">
+                    <div class="new_product position-absolute top-0 start-0">
+                      <span class="badge py-2 px-3 rounded-pill bg-danger text-light">New</span>
+                    </div>
+                    <a href="product_details.html"><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQfiLaTjm-clfgcqScU9o7ydBzsgwnbRAuXD6bWHlYudZ6wW1MfK8NVfuw7FHqn2qhqFYCytrHWSr2t1PJRT2wP62SujuixwYpywaaNI0KN&usqp=CAE" class="img img-fluid" alt=""></a>
+                   
+                  </div>
+                  <div class="product-caption my-3">
+                    <div class="product-ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <h5><a href="product_details.html">BLUE BLAZER</a></h5>
+                    <div class="price">
+                      <b><span class="mr-1"></span><span>400</span></b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="single_product shadow text-center p-1">
+                  <div class="product_img">
+                    <div class="new_product position-absolute top-0 start-0">
+                      <span class="badge py-2 px-3 rounded-pill bg-danger text-light">New</span>
+                    </div>
+                    <a href="product_details.html"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSINV2aUawXacBZxe-9nxD3mqE36fP1BI4Qyr1uWdHZ8_KuEhwuQ2NsUJUWCngQrIUG5XhL7O0JGZZXO3XnZVSlGRPJKyA1rQrCiOTj5ZGE&usqp=CAE" class="img img-fluid" alt=""></a>
+                    
+                  </div>
+                  <div class="product-caption my-3">
+                    <div class="product-ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <h5><a href="product_details.html">BLUE BLAZER</a></h5>
+                    <div class="price">
+                      <b><span class="mr-1"></span><span>400</span></b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-12">
+                <div class="single_product shadow text-center p-1">
+                  <div class="product_img">
+                    <div class="new_product position-absolute top-0 start-0">
+                      <span class="badge py-2 px-3 rounded-pill bg-danger text-light">New</span>
+                    </div>
+                    <a href="product_details.html"><img src="https://images.samsung.com/is/image/samsung/p6pim/in/2407/gallery/in-galaxy-watch7-l310-sm-l310nzsains-542366980?$1300_1038_PNG$" class="img img-fluid" alt=""></a>
+                  </div>
+                  <div class="product-caption my-3">
+                    <div class="product-ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <h5><a href="product_details.html">BLUE BLAZER</a></h5>
+                    <div class="price">
+                      <b><span class="mr-1"></span><span>400</span></b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="single_product shadow text-center p-1">
+                  <div class="product_img">
+                    <div class="new_product position-absolute top-0 start-0">
+                      <span class="badge py-2 px-3 rounded-pill bg-danger text-light">New</span>
+                    </div>
+                    <a href="product_details.html"><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRu_RlpP0FzY9_R4DxaC0KcYJfWhxSJkDpcY1vunrOs0BNh9kK_Fa7w8BpuNBUg0YVaR_nKlp_lPB3hwlXQgkljRvFanRgVCBwQ2TXmtR_NQq1NIThRspyh&usqp=CAE" class="img img-fluid" alt=""></a>
+                  </div>
+                  <div class="product-caption my-3">
+                    <div class="product-ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <h5><a href="product_details.html">BLUE BLAZER</a></h5>
+                    <div class="price">
+                      <b><span class="mr-1"></span><span>400</span></b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="single_product shadow text-center p-1">
+                  <div class="product_img">
+                    <div class="new_product position-absolute top-0 start-0">
+                      <span class="badge py-2 px-3 rounded-pill bg-danger text-light">New</span>
+                    </div>
+                    <a href="product_details.html"><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRnTUCqeGh9ZekMGDVN50op_GiRL_F7EF0Ok9UiO7Zm9bWw3Rq1PcfFFKom7fnhWq7gg_j0xfUKlL4YiGgHcAxiH8aO-mLVVFOThfm91-gKeSzqheehv5sz&usqp=CAE" class="img img-fluid" alt=""></a>
+                  </div>
+                  <div class="product-caption my-3">
+                    <div class="product-ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <h5><a href="product_details.html">GREY BLAZER</a></h5>
+                    <div class="price">
+                      <b><span class="mr-1"></span><span>400</span></b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer starts-->
+<section class="footer_section pt-5 pb-2" id="footer_section ">
+  <footer >
+    <div class="container-fluid text">
+      <div class="row">
+
+        <div class="col-md-3 col-6 pl-5 pl-sm-15">
+          <div class="footer_title">
+            <a href="cit.html"><img src="https://www.logodesignteam.com/images/portfolio-images/ecommerce-websites-logo-design/ecommerce-websites-logo-design20.jpg" width="150px" class="img img-fluid" alt="logo"></a>
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio quis asperiores cumque accusamus eaque dolor enim. 
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="footer_title pt-3 mb-3">
+            <h3>Quick Links</h3>
+          </div>
+          <div class="footer_links">
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Offers and Discounts</a></li>
+              <li><a href="#">Get Coupon</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="footer_title pt-3 mb-3">
+            <h3>New Product</h3>
+          </div>
+          <div class="footer_links">
+            <ul>
+              <li><a href="#">Woman Cloth</a></li>
+              <li><a href="#">Fashion Accessories</a></li>
+              <li><a href="#">Man Accessories</a></li>
+              <li><a href="#">Toys</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="footer_title pt-3 mb-3">
+            <h3>Support</h3>
+          </div>
+          <div class="footer_links">
+            <ul>
+              <li><a href="#">Frequently Asked Questions</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Privacy and Policy</a></li>
+              <li><a href="#">Report a Payment Issue</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="border-top">
+      <h6 class="text-center mt-3">Copyright @2020 All rights Reserved</h6>
+    </div>
+  </footer>
+</section>
+<!-- footer ends -->
+
+<div class="backtop">
+  <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+    <i class="fas fa-chevron-up text-dark"></i>
+  </a>
+</div>
+
+              </div>
+            </div>
+          </section> 
+
+    
+
+    <script src="https://kit.fontawesome.com/407fccd64e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-K+ihxAGdEq3T9Qvudj9e4GA9u5WITvG2M7BTH4wyE3I=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNJlvq09WqkXcmVIWnT2KQlpWNPTw4xYAHBdZjQbYbT7Z2Siq1FIKBx0PHH+6VB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9AmmE6f5r0uNxi0m5A/rN4vnpfZZh2z5Ruz9Osxz5Bf8ABeG1ZJ3B8/" crossorigin="anonymous"></script>
+  </body>
+</html>
